@@ -1,0 +1,31 @@
+---
+const { link, img, alt } = Astro.props;
+---
+
+<div class="WebButton">
+  <a href={link}>
+    <img src={img} width="88" height="31" loading="lazy" alt={alt} />
+  </a>
+</div>
+
+<style lang="scss">
+  @use '../styles/vars.scss' as *;
+  .WebButton {
+    user-select: none;
+    width: 88px;
+    height: 31px;
+
+    margin: 0.25em;
+    display: flex;
+    font-style: italic;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    a > img:hover {
+      box-shadow: 0px 0px 6px $blue;
+    }
+  }
+</style>

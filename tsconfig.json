@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": [
+    "./node_modules/**",
+    "./.svelte-kit/**",
+    "./dist/**",
+    "./build/**",
+    "./.svelte/**",
+    "./.vercel_build_output/**",
+    "./.vercel/**",
+    "./coverage/**",
+    "**/_/**"
+  ]
+
+}
